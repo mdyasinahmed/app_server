@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-
+// Main Function
 void main() {
   runApp(const MyApp());
 }
 
-
+// My App and Material App class
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -15,20 +15,18 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(home: HomeActivity());
   }
-
-
-
-
 }
 
 
+// Activity Page and Scaffold Section
 class HomeActivity extends StatelessWidget {
   const HomeActivity({super.key});
 
-
   @override
   Widget build(BuildContext context) {
+    // Scaffold Section
     return Scaffold(
+      // App Bar Section
       appBar: AppBar(
           backgroundColor: Colors.green,
           elevation: 70.0,
@@ -50,6 +48,7 @@ class HomeActivity extends StatelessWidget {
         ],
       ),
 
+      // App Body Section
       body: Center(child: Column(mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text('This is mod 5 Assignment.',
